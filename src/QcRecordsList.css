@@ -1,0 +1,122 @@
+.qc-records {
+  color: #334155;
+  text-align: left;
+}
+
+.qc-records-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.qc-records-heading h2 {
+  margin: 0 0 6px;
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+.qc-records-heading p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.qc-records-count {
+  color: #64748b;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.qc-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgb(15 23 42 / 4%);
+}
+
+.qc-table {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.qc-table th {
+  padding: 14px 18px;
+  background-color: #f8fafc;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.qc-table td {
+  padding: 16px 18px;
+  border-top: 1px solid #eef2f6;
+  color: #475569;
+  font-size: 14px;
+}
+
+.qc-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.qc-table .qc-batch-number {
+  color: #0f172a;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.qc-table .qc-inspection-date {
+  white-space: nowrap;
+}
+
+.qc-result {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.qc-result--passed {
+  background-color: #ecfdf5;
+  color: #047857;
+}
+
+.qc-result--failed {
+  background-color: #fef2f2;
+  color: #b91c1c;
+}
+
+.qc-result--quarantined {
+  background-color: #fffbeb;
+  color: #b45309;
+}
+
+.qc-table .qc-notes {
+  min-width: 250px;
+  color: #64748b;
+}
+
+@media (max-width: 700px) {
+  .qc-records-heading {
+    align-items: flex-start;
+  }
+
+  .qc-records-heading h2 {
+    font-size: 19px;
+  }
+
+  .qc-table th,
+  .qc-table td {
+    padding: 13px 14px;
+  }
+}

@@ -1,0 +1,99 @@
+.inventory-list {
+  color: #334155;
+  text-align: left;
+}
+
+.inventory-list-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.inventory-list-heading h2 {
+  margin: 0 0 6px;
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+.inventory-list-heading p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.inventory-list-count {
+  color: #64748b;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.inventory-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgb(15 23 42 / 4%);
+}
+
+.inventory-table {
+  width: 100%;
+  min-width: 750px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.inventory-table th {
+  padding: 14px 18px;
+  background-color: #f8fafc;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.inventory-table td {
+  padding: 16px 18px;
+  border-top: 1px solid #eef2f6;
+  color: #475569;
+  font-size: 14px;
+}
+
+.inventory-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.inventory-table .inventory-material-name {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.inventory-table .inventory-material-code {
+  color: #64748b;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 13px;
+}
+
+.inventory-table .inventory-quantity {
+  color: #0f172a;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .inventory-list-heading {
+    align-items: flex-start;
+  }
+
+  .inventory-list-heading h2 {
+    font-size: 19px;
+  }
+
+  .inventory-table th,
+  .inventory-table td {
+    padding: 13px 14px;
+  }
+}
